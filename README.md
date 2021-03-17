@@ -1,7 +1,7 @@
 # Django_web
 
-[![Build Status](https://travis-ci.org/ChiangChienWei/pwb.svg?branch=master)](https://travis-ci.org/ChiangChienWei/pwb)
-[![codecov](https://codecov.io/gh/ChiangChienWei/pwb/branch/master/graph/badge.svg?token=5T5UF00CWA)](https://codecov.io/gh/ChiangChienWei/pwb)
+[![Build Status](https://travis-ci.org/ChiangChienWei/pwb.svg?branch=demo)](https://travis-ci.org/ChiangChienWei/pwb)
+[![codecov](https://codecov.io/gh/ChiangChienWei/pwb/branch/demo/graph/badge.svg?token=5T5UF00CWA)](https://codecov.io/gh/ChiangChienWei/pwb)
 
 首先請先下載 [Anaconda](https://www.anaconda.com/products/individual#macos)
 
