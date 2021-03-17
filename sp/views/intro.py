@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
 
-def intro(request):
+def intro_view(request):
 
     return render(request, 'sp/intro/view.html')
