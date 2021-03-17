@@ -1,0 +1,23 @@
+language: python
+
+python:
+  - "3.7.9"
+
+services:
+  - mysql
+
+install:
+  - pip install -r requirements.txt
+  - pip install coverage codecov --ignore-installed
+
+before_script:
+  - mysql -e 'CREATE DATABASE DW CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;'
+
+script:
+  - coverage run -m unittest
+
+after_success:
+  - codecov --token=de0d71ad-4fdb-472c-a72b-abc4a0351996
+
+notifications:
+  slack: amigo-7n17651:MF9mhdoRSCCCQFTwwksv1DsF
