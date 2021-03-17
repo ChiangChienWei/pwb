@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Resume - Start Bootstrap Theme</title>
+        <title>Will Chiang - Personal Website</title>
         <link rel="icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}">
 
         <!-- Font Awesome icons (free version)-->
@@ -34,27 +34,9 @@
         <div class="container-fluid p-0">
 
             <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Will
-                        <span class="text-primary">Chiang</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        {% trans '高雄市三民區明誠一路147號4樓．' %}
-                        <a href="mailto:b41510@gmail.com">b41510@gmail.com</a>
-                    </div>
-                    <p class="lead mb-5">
-                        {% trans '一名半路出家的網頁開發工程師，理由是不想去科技廠 ヽ(●´∀`●)ﾉ ，有網頁開發以及後端的經驗，對程式設計、數據科學充滿高度熱誠，有獨立思考分析能力並享受解決問題的過程' %}
-                    </p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://pda.104.com.tw/profile/edit?vno=75nav6zly"><i class="fas fa-briefcase"></i></a>
-                        <a class="social-icon" href="https://github.com/ChiangChienWei"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="https://www.instagram.com/will_ccw/"><i class="fab fa-instagram"></i></a>
-                        <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                </div>
-            </section>
+            {% block about %}
+                {% include 'sp/about/view.html' %}
+            {% endblock about %}
 
             <hr class="m-0" />
 
