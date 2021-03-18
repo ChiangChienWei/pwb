@@ -14,7 +14,6 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PROJECT_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
 
 
 # Quick-start development settings - unsuitable for production
@@ -121,7 +120,7 @@ LANGUAGES = (
 )
 
 LOCALE_PATHS = (
-    os.path.join(BASE_DIR, 'locale'),
+    os.path.join(BASE_DIR, 'locale/'),
 )
 
 TIME_ZONE = 'Asia/Taipei'
