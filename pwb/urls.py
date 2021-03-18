@@ -17,13 +17,15 @@ from django.conf.urls import url
 from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
 from django.urls import include
+from django.views.i18n import set_language
 
 from sp.views import dashboard as dashboard_views
 
 urlpatterns = [
     url(r'^$', dashboard_views.dashboard, name='dashboard'),
     url(r'^admin/', admin.site.urls),
-    url(r'^i18n/', include('django.conf.urls.i18n')),
+    # url(r'^i18n/', include('django.conf.urls.i18n')),
+    url(r'^setlang/', set_language, name='setlang'),
 ]
 
 urlpatterns += i18n_patterns(
