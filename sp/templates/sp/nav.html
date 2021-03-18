@@ -20,7 +20,7 @@
                 </ul>
             </div>
             <div class="col-md-12 text-center mt-5">
-                <form name="set-language" action="{% url 'set_language' %}" method="post">
+                <form name="set-language" action="{% url 'setlang' %}" method="post">
                     {% csrf_token %}
                     <input name="next" type="hidden" value="{{ redirect_to }}" />
                     <select name="language">
