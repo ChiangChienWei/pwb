@@ -2,8 +2,8 @@
 
 <section class="resume-section" id="skills">
     <div class="resume-section-content">
-        <h2 class="mb-5">Skills</h2>
-        <div class="subheading mb-3">Programming Languages & Tools</div>
+        <h2 class="mb-5">{% trans '技能' %}</h2>
+        <div class="subheading mb-3">{% trans '語言 & 工具' %}</div>
         <ul class="list-inline dev-icons">
             <li class="list-inline-item"><i class="iconify" data-icon="vscode-icons:file-type-python" data-inline="false"></i></li>
             <li class="list-inline-item"><i class="iconify" data-icon="vscode-icons:file-type-django" data-inline="false"></i></li>
@@ -16,23 +16,23 @@
             <li class="list-inline-item"><i class="iconify" data-icon="vscode-icons:file-type-codecov" data-inline="false"></i></li>
             <li class="list-inline-item"><i class="iconify" data-icon="vscode-icons:file-type-travis" data-inline="false"></i></li>
         </ul>
-        <div class="subheading mb-3">Workflow</div>
+        <div class="subheading mb-3">{% trans '工作流程' %}</div>
         <ul class="fa-ul mb-0">
             <li>
                 <span class="fa-li"><i class="fas fa-check"></i></span>
-                確認需求以及切版樣式
+                {% trans '確認需求以及切版樣式' %}
             </li>
             <li>
                 <span class="fa-li"><i class="fas fa-check"></i></span>
-                開發程式，撰寫 test cases
+                {% trans '開發程式，撰寫 test cases' %}
             </li>
             <li>
                 <span class="fa-li"><i class="fas fa-check"></i></span>
-                開啟 Pull Request，進行 Code Review
+                {% trans 'push 到 Github 利用 Travis ci 來執行測試' %}
             </li>
             <li>
                 <span class="fa-li"><i class="fas fa-check"></i></span>
-                將 Code Review 完的 Pull Request Merge 進 branch
+                {% trans '測試無誤後將程式碼 merge 進 branch 進行自動部署' %}
             </li>
         </ul>
     </div>
