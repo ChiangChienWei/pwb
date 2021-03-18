@@ -34,12 +34,12 @@
         <!-- Page Content-->
         <div class="container-fluid p-0">
 
-            <!-- About-->
-            {% block about %}
-                {% include 'sp/about/view.html' %}
-            {% endblock about %}
+            {% block dashboard %}{% endblock dashboard %}
 
-            <hr class="m-0" />
+            <!-- About-->
+            {% block about %}{% endblock about %}
+
+            <hr class="m-0">
 
             <!-- Experience-->
             {% block experience %}{% endblock experience %}

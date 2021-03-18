@@ -13,10 +13,19 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf.urls import url
+from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
-from django.urls import include, path
+from django.urls import include
+
+from sp.views import dashboard as dashboard_views
 
 urlpatterns = [
-    path('', include('sp.urls')),
-    path('admin/', admin.site.urls),
+    url(r'^$', dashboard_views.dashboard, name='dashboard'),
+    url(r'^admin/', admin.site.urls),
+    url(r'^i18n/', include('django.conf.urls.i18n')),
 ]
+
+urlpatterns += i18n_patterns(
+    url(r'^sp/', include(('sp.urls', 'sp'), namespace='sp')),
+)
